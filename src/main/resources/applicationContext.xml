@@ -43,7 +43,7 @@
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
 		<!-- 扫描所有的DAO接口 加入到IOC容器中 -->
-		<property name="basePackage" value="com.crud.dao" />
+		<property name="basePackage" value="com.laoqixin.dao" />
 	</bean>
 	
 	<!-- **********		批量执行的SqlSession		********** -->
