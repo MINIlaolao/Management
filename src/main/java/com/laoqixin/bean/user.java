@@ -1,31 +1,23 @@
 package com.laoqixin.bean;
 
-/*
- *  @项目名：  PersonnelManagementSystem
- *  @包名：    com.laoqixin.bean
- *  @文件名:   user
- *  @创建者:   laoqixin
- *  @创建时间:  2018/12/10 14:46
- *  @描述：    TODO
- */
 public class user {
-    private static final String TAG = "user";
-    private int    user_id;
-    private String user_password;
+    private Integer userId;
 
-    public int getUser_id() {
-        return user_id;
+    private String userPassword;
+
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getUser_password() {
-        return user_password;
+    public String getUserPassword() {
+        return userPassword;
     }
 
-    public void setUser_password(String user_password) {
-        this.user_password = user_password;
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword == null ? null : userPassword.trim();
     }
 }

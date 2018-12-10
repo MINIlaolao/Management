@@ -1,67 +1,63 @@
 package com.laoqixin.bean;
 
-/*
- *  @项目名：  PersonnelManagementSystem
- *  @包名：    com.laoqixin.bean
- *  @文件名:   employee
- *  @创建者:   laoqixin
- *  @创建时间:  2018/12/10 14:49
- *  @描述：    TODO
- */
 public class employee {
-    private static final String TAG = "employee";
-    private int emp_id;
-    private String emp_name;
-    private int    emp_age;
-    private double emp_income;
-    private String emp_depart;
-    private String emp_position;
+    private Integer empId;
 
-    public int getEmp_id() {
-        return emp_id;
+    private String empName;
+
+    private Integer empAge;
+
+    private Double empIncome;
+
+    private String empDepart;
+
+    private String empPosition;
+
+    public Integer getEmpId() {
+        return empId;
     }
 
-    public void setEmp_id(int emp_id) {
-        this.emp_id = emp_id;
+    public void setEmpId(Integer empId) {
+        this.empId = empId;
     }
 
-    public String getEmp_name() {
-        return emp_name;
+    public String getEmpName() {
+        return empName;
     }
 
-    public void setEmp_name(String emp_name) {
-        this.emp_name = emp_name;
+    public void setEmpName(String empName) {
+        this.empName = empName == null ? null : empName.trim();
     }
 
-    public int getEmp_age() {
-        return emp_age;
+    public Integer getEmpAge() {
+        return empAge;
     }
 
-    public void setEmp_age(int emp_age) {
-        this.emp_age = emp_age;
+    public void setEmpAge(Integer empAge) {
+        this.empAge = empAge;
     }
 
-    public double getEmp_income() {
-        return emp_income;
+    public Double getEmpIncome() {
+        return empIncome;
     }
 
-    public void setEmp_income(double emp_income) {
-        this.emp_income = emp_income;
+    public void setEmpIncome(Double empIncome) {
+        this.empIncome = empIncome;
     }
 
-    public String getEmp_depart() {
-        return emp_depart;
+    public String getEmpDepart() {
+        return empDepart;
     }
 
-    public void setEmp_depart(String emp_depart) {
-        this.emp_depart = emp_depart;
+    public void setEmpDepart(String empDepart) {
+        this.empDepart = empDepart == null ? null : empDepart.trim();
     }
 
-    public String getEmp_position() {
-        return emp_position;
+    public String getEmpPosition() {
+        return empPosition;
     }
 
-    public void setEmp_position(String emp_position) {
-        this.emp_position = emp_position;
+    public void setEmpPosition(String empPosition) {
+        this.empPosition = empPosition == null ? null : empPosition.trim();
     }
 }
