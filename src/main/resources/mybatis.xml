@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 开启驼峰命名规则 -->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- 配置别名 实体类的位置 方便引用-->
+    <typeAliases>
+        <package name="com.laoqixin.dao"/>
+    </typeAliases>
+
+    <plugins>
+        <!-- com.github.pagehelper为PageHelper类所在包名 -->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!-- 不到达不正确的页码 -->
+            <property name="reasonable" value="true"/>
+        </plugin>
+    </plugins>
+    <environments default="db_personnelmanagement">
+        <environment id="database">
+            <transactionManager type="JDBC">
+            </transactionManager>
+            <dataSource type="C3P0">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/db_personnelmanagement?useUnicode=true"/>
+                <property name="user" value="root"/>
+                <property name="password" value="743968168"/>
+            </dataSource>
+        </environment>
+    </environments>
+</configuration>
