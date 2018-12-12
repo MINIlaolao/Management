@@ -1,7 +1,6 @@
 package com.laoqixin.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.laoqixin.bean.User;
 
 /*
  *  @项目名：  人员管理系统0.1
@@ -11,9 +10,6 @@ import org.springframework.stereotype.Service;
  *  @创建时间:  2018/12/12 10:56
  *  @描述：    TODO
  */
-@Service
-public class UserService {
-    @Autowired
-    UserService mUserService;
-
+public interface UserService {
+    User findUser(String userId,String userPassword);
 }

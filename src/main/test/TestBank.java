@@ -1,5 +1,6 @@
 import com.laoqixin.bean.User;
 import com.laoqixin.dao.UserMapper;
+import com.laoqixin.service.UserService;
 
 import junit.framework.TestCase;
 
@@ -24,4 +25,13 @@ public class TestBank extends TestCase {
         User user = dao.findUser("laoqixin","123");
         System.out.println(user.getId());
     }
+
+    @Test
+    public void testUserService()
+    {
+        UserService service =(UserService) context.getBean("userService");
+        User user = service.findUser("laoqixin","123");
+        System.out.println("testUserService:" + user.getId());
+    }
+
 }
