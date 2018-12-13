@@ -6,7 +6,6 @@ import com.laoqixin.service.EmployeeService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -18,8 +17,7 @@ import java.util.List;
  *  @创建时间:  2018/12/13 8:56
  *  @描述：    TODO
  */
-@Service("EmployeeService")
-@Transactional
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired

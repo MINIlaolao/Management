@@ -37,6 +37,14 @@ public class EmployeeController {
     {
         return "add";
     }
+    @RequestMapping(value = "/dealToAdd",method = RequestMethod.POST)
+    public String dealToAdd(Model model,Integer addEmployeeId,String addEmployeeName,Integer addEmployeeAge,
+    Double addEmployeeIncome,String addEmployeeDepart,String addEmployeePosition)
+    {
+        Employee employee = new Employee(addEmployeeId,addEmployeeName,addEmployeeAge,addEmployeeIncome,addEmployeeDepart,addEmployeePosition);
+        employeeService.insert(employee);
+        return "redirect:/ToshowEmployeeList";
+    }
     @RequestMapping("/deleteEmployee")
     public String deleteEmployee(Integer empId)
     {
@@ -61,19 +69,20 @@ public class EmployeeController {
                                      Double updateEmployeeIncome,String updateEmployeeDepart,String updateEmployeePostion)
     {
         Employee employee = new Employee(updateByEmployeeId,updateEmployeeName,updateEmployeeAge,updateEmployeeIncome,updateEmployeeDepart,updateEmployeePostion);
-//        加入构造方法后可去除
-//
-//        Employee employee = new Employee();
-//        employee.setEmpId(empId);
-//        employee.setEmpName(empName);
-//        employee.setEmpAge(empAge);
-//        employee.setEmpIncome(empIncome);
-//        employee.setEmpDepart(empDepart);
-//        employee.setEmpPosition(empPosition);
         employeeService.updateByPrimaryKey(employee);
         return "redirect:/ToshowEmployeeList";
     }
 
-
-
+    @RequestMapping("selectEmployee")
+    public String selectEmployee()
+    {
+        return "selectEmployeeJsp";
+    }
+    @RequestMapping(value = "dealselectEmployee",method = RequestMethod.POST)
+    public String dealselectEmployee(Model model,Integer selectEmployeeId)
+    {
+        Employee employee = employeeService.selectByPrimaryKey(selectEmployeeId);
+        model.addAttribute("selectEmployeeMsg",employee);
+        return "selectSuccess";
+    }
 }

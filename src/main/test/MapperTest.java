@@ -1,4 +1,5 @@
 import com.laoqixin.dao.EmployeeMapper;
+import com.laoqixin.service.EmployeeService;
 
 import org.apache.ibatis.session.SqlSession;
 import org.junit.runner.RunWith;
@@ -21,26 +22,28 @@ public class MapperTest {
 
     @Autowired
     EmployeeMapper employeeMapper;
+    @Autowired
+    EmployeeService employeeService;
     SqlSession sqlSession;
 
     /**
      * 测试Mapper
      */
-//    @Test
-//    public void testUser()
+//    @Test:成功
+//    public void testMapper()
 //    {
-//       user user = mUserMapper.getUserById("laoqixin", "123");
-//        System.out.println(user);
+//        Employee employee = new Employee(3,"劳启新",18,1000.0,"开发部","开发");
+//        employeeMapper.insert(employee);
+//        System.out.println(employee.getEmpId());
 //    }
-//    public void testprepareData()
+
+    /**
+     * 测试Service
+     */
+//    @Test :成功
+//    public void testService()
 //    {
-//        Employee employee = new Employee();
-//        employee.setEmpId(1);
-//        employee.setEmpName("laoqxin");
-//        employee.setEmpAge(1);
-//        employee.setEmpDepart("人事");
-//        employee.setEmpIncome(2000.0);
-//        employee.setEmpPosition("人事部门");
-//        employeeMapper.updateByPrimaryKey(employee);
+//        Employee employee = employeeService.selectByPrimaryKey(1);
+//        System.out.println(employee.getEmpName());
 //    }
   }

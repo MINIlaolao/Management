@@ -11,7 +11,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>员工信息</title>
+    <title>员工信息界面</title>
     <style type="text/css">
         .divForm {
             position: absolute; /*绝对定位*/
@@ -38,6 +38,7 @@
             <td>员工职务</td>
             <td>删除</td>
             <td>更改</td>
+            <td><a href="/selectEmployee">查询员工</a></td>
         </tr>
         <c:forEach items="${EmployeeList}" var="employee" varStatus="vs">
             <tr>
