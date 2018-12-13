@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laoqixin.dao.EmployeeMapper">
+  <resultMap id="BaseResultMap" type="com.laoqixin.bean.Employee">
+    <id column="emp_id" jdbcType="INTEGER" property="empId" />
+    <result column="emp_name" jdbcType="VARCHAR" property="empName" />
+    <result column="emp_age" jdbcType="INTEGER" property="empAge" />
+    <result column="emp_income" jdbcType="DOUBLE" property="empIncome" />
+    <result column="emp_depart" jdbcType="VARCHAR" property="empDepart" />
+    <result column="emp_position" jdbcType="VARCHAR" property="empPosition" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from employee
+    where emp_id = #{empId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.laoqixin.bean.Employee">
+    insert into employee (emp_id, emp_name, emp_age, 
+      emp_income, emp_depart, emp_position
+      )
+    values (#{empId,jdbcType=INTEGER}, #{empName,jdbcType=VARCHAR}, #{empAge,jdbcType=INTEGER}, 
+      #{empIncome,jdbcType=DOUBLE}, #{empDepart,jdbcType=VARCHAR}, #{empPosition,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.laoqixin.bean.Employee">
+    update employee
+    set emp_name = #{empName,jdbcType=VARCHAR},
+      emp_age = #{empAge,jdbcType=INTEGER},
+      emp_income = #{empIncome,jdbcType=DOUBLE},
+      emp_depart = #{empDepart,jdbcType=VARCHAR},
+      emp_position = #{empPosition,jdbcType=VARCHAR}
+    where emp_id = #{empId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select emp_id, emp_name, emp_age, emp_income, emp_depart, emp_position
+    from employee
+    where emp_id = #{empId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select emp_id, emp_name, emp_age, emp_income, emp_depart, emp_position
+    from employee
+  </select>
+</mapper>

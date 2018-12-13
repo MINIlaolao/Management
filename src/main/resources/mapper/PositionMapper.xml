@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laoqixin.dao.PositionMapper">
+  <resultMap id="BaseResultMap" type="com.laoqixin.bean.Position">
+    <id column="ps_id" jdbcType="INTEGER" property="psId" />
+    <result column="ps_name" jdbcType="VARCHAR" property="psName" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from position
+    where ps_id = #{psId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.laoqixin.bean.Position">
+    insert into position (ps_id, ps_name)
+    values (#{psId,jdbcType=INTEGER}, #{psName,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.laoqixin.bean.Position">
+    update position
+    set ps_name = #{psName,jdbcType=VARCHAR}
+    where ps_id = #{psId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select ps_id, ps_name
+    from position
+    where ps_id = #{psId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select ps_id, ps_name
+    from position
+  </select>
+</mapper>
