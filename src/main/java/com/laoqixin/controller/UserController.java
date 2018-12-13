@@ -30,9 +30,9 @@ public class UserController {
 
         if(user != null)
         {
-            System.out.println(user.getId());
+//            System.out.println(user.getId());
             session.setAttribute("user",user);
-            return "success";
+            return "redirect:/ToshowEmployeeList";
         }
         model.addAttribute("msg","账号或密码错误,请重新输入!");
         return "login";

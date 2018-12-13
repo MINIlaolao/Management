@@ -23,7 +23,7 @@ CREATE TABLE `department` (
   `depart_id` int(11) NOT NULL,
   `depart_name` varchar(255) CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`depart_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of department
@@ -46,7 +46,7 @@ CREATE TABLE `employee` (
   `emp_depart` varchar(255) CHARACTER SET utf8 NOT NULL,
   `emp_position` varchar(255) CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`emp_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of employee
@@ -65,7 +65,7 @@ CREATE TABLE `position` (
   `ps_id` int(11) NOT NULL,
   `ps_name` varchar(255) CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`ps_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of position
@@ -86,7 +86,7 @@ CREATE TABLE `user` (
   `user_id` varchar(11) NOT NULL,
   `user_password` varchar(255) CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
