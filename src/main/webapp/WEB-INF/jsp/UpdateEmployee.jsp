@@ -4,7 +4,8 @@
 <body>
 <form action="/dealupdateEmployee" method="post">
     <h5 align="center">员工编号 ${updateEmployeeId}</h5>
-    <input type="hidden" value="${updateEmployeeId}" name =EmployeeId>
+    <%--name的属性要和controller里面值一致 不然匹配不了数据--%>
+    <input type="hidden" value="${updateEmployeeId}" name =updateByEmployeeId>
     <h5 align="center">员工姓名 <input type="text" name="updateEmployeeName" value=${updateEmployeeName}></h5>
     <h5 align="center">员工年龄 <input type="text" name="updateEmployeeAge" value=${updateEmployeeAge}></h5>
     <h5 align="center">员工收入 <input type="text" name="updateEmployeeIncome" value=${updateEmployeeIncome}></h5>

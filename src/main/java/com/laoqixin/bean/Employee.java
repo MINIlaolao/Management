@@ -1,6 +1,25 @@
 package com.laoqixin.bean;
 
 public class Employee {
+    public Employee(Integer empId,
+                    String empName,
+                    Integer empAge,
+                    Double empIncome,
+                    String empDepart,
+                    String empPosition)
+    {
+        this.empId = empId;
+        this.empName = empName;
+        this.empAge = empAge;
+        this.empIncome = empIncome;
+        this.empDepart = empDepart;
+        this.empPosition = empPosition;
+    }
+
+    public Employee() {
+
+    }
+
     private Integer empId;
 
     private String empName;

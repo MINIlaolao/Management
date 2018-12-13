@@ -9,7 +9,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Purple_loginform Website Template | Home :: w3layouts</title>
+    <title>人员管理后台系统</title>
     <link href="<%=basePath %>css/style.css" rel="stylesheet" type="text/css" media="all" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,7 +27,7 @@
     });
     </script>
 </head>
-<body style="background: url(<%=basePath %>img/bg.jpg)">
+<body style="background: url(<%=basePath %>images/bg.jpg)">
 <!-- contact-form -->
 <div class="message warning">
     <div class="inset">

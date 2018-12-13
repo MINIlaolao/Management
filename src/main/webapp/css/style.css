@@ -75,7 +75,7 @@ form li{
 	margin: 12px 9px 9px 0px;
 }
 .user{
-	background: url(WEB-INF/static/img/icons.png) no-repeat 7px 1px;
+	background: url(../images/icons.png) no-repeat 7px 1px;
 	
 }
 .lock{

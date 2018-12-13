@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class EmployeeController {
     @RequestMapping("/showToAdd")
     public String showToAdd()
     {
-        return "/add";
+        return "add";
     }
     @RequestMapping("/deleteEmployee")
     public String deleteEmployee(Integer empId)
@@ -55,19 +56,20 @@ public class EmployeeController {
         return "UpdateEmployee";
     }
 
-    @RequestMapping("/dealupdateEmployee")
-    public String dealupdateEmployee(Model model,Integer empId,String empName,Integer empAge,
-                                     Double empIncome,String empDepart,String empPosition)
+    @RequestMapping(value = "/dealupdateEmployee",method = RequestMethod.POST)
+    public String dealupdateEmployee(Model model,Integer updateByEmployeeId,String updateEmployeeName,Integer updateEmployeeAge,
+                                     Double updateEmployeeIncome,String updateEmployeeDepart,String updateEmployeePostion)
     {
-//        Employee employee = new Employee(empId,empName,empAge,empIncome,empDepart,empPosition);
+        Employee employee = new Employee(updateByEmployeeId,updateEmployeeName,updateEmployeeAge,updateEmployeeIncome,updateEmployeeDepart,updateEmployeePostion);
 //        加入构造方法后可去除
-        Employee employee = new Employee();
-        employee.setEmpId(empId);
-        employee.setEmpName(empName);
-        employee.setEmpAge(empAge);
-        employee.setEmpIncome(empIncome);
-        employee.setEmpDepart(empDepart);
-        employee.setEmpPosition(empPosition);
+//
+//        Employee employee = new Employee();
+//        employee.setEmpId(empId);
+//        employee.setEmpName(empName);
+//        employee.setEmpAge(empAge);
+//        employee.setEmpIncome(empIncome);
+//        employee.setEmpDepart(empDepart);
+//        employee.setEmpPosition(empPosition);
         employeeService.updateByPrimaryKey(employee);
         return "redirect:/ToshowEmployeeList";
     }
