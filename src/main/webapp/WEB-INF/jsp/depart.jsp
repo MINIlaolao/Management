@@ -27,6 +27,8 @@
                     <tr>
                         <td>${d.departId}</td>
                         <td>${d.departName}</td>
+                        <td><a href="/updateById?departId=${d.departId}&departName=${d.departName}">更新</a></td>
+                        <td><a href="/deleteById?departId=${d.departId}">删除</a></td>
                     </tr>
                 </c:forEach>
     </table>

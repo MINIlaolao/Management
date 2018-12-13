@@ -50,7 +50,7 @@ public class DepartmentController {
         if(er>0){
                 System.out.print("更新成功");
         }
-        return null;
+        return "depart";
     }
 
     @RequestMapping("/deleteById")
