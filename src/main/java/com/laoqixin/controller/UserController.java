@@ -32,11 +32,17 @@ public class UserController {
         {
 //            System.out.println(user.getId());
             session.setAttribute("user",user);
-            return "redirect:/ToshowEmployeeList";
+            return "redirect:/toSelectDepart";//改一下ToshowEmployeeList
         }
         model.addAttribute("msg","账号或密码错误,请重新输入!");
         return "login";
     }
+    @RequestMapping("/toSelectDepart")
+    public  String toSelectDepart()
+    {
+        return "selectDepartment";
+    }
+
 
     @RequestMapping("/signOut")
     public String signOut(HttpSession session)
