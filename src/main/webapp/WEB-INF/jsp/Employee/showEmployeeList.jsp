@@ -60,7 +60,6 @@
             </tr>
         </c:forEach>
     </table>
-    <botton><a href="" </botton>
 
     <%--&lt;%&ndash; TODO &ndash;%&gt;--%>
     <%--<c:choose>--%>

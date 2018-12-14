@@ -19,7 +19,8 @@
         left: 50%;
         margin-top: -200px;
         margin-left: -150px;
-    }</style>
+    }
+    </style>
 </head>
 <body>
 <div class="divForm">

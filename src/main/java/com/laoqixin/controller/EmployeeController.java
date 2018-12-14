@@ -30,12 +30,12 @@ public class EmployeeController {
     {
         List<Employee> employeeList = employeeService.selectAll();
         model.addAttribute("EmployeeList",employeeList);
-        return "showEmployeeList";
+        return "Employee/showEmployeeList";
     }
     @RequestMapping("/showToAdd")
     public String showToAdd()
     {
-        return "add";
+        return "Employee/add";
     }
     @RequestMapping(value = "/dealToAdd",method = RequestMethod.POST)
     public String dealToAdd(Model model,Integer addEmployeeId,String addEmployeeName,Integer addEmployeeAge,
@@ -61,7 +61,7 @@ public class EmployeeController {
         model.addAttribute("updateEmployeeIncome",empIncome);
         model.addAttribute("updateEmployeeDepart",empDepart);
         model.addAttribute("updateEmployeePosition",empPosition);
-        return "UpdateEmployee";
+        return "Employee/UpdateEmployee";
     }
 
     @RequestMapping(value = "/dealupdateEmployee",method = RequestMethod.POST)
@@ -76,13 +76,14 @@ public class EmployeeController {
     @RequestMapping("selectEmployee")
     public String selectEmployee()
     {
-        return "selectEmployeeJsp";
+        return "Employee/selectEmployeeJsp";
     }
     @RequestMapping(value = "dealselectEmployee",method = RequestMethod.POST)
     public String dealselectEmployee(Model model,Integer selectEmployeeId)
     {
         Employee employee = employeeService.selectByPrimaryKey(selectEmployeeId);
         model.addAttribute("selectEmployeeMsg",employee);
-        return "selectSuccess";
+        return "Department/selectSuccess";
     }
+
 }

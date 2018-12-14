@@ -19,14 +19,14 @@ public class DepartmentController {
     public String showDepartment(Model model){
         List<Department> ls = departmentService.selectAll();
         model.addAttribute("depart",ls);
-        return "depart";
+        return "Department/depart";
     }
 
     @RequestMapping("/showDepartmentById")
     public String showDepartmentById(Model model,Integer departId){
         Department department = departmentService.selectByPrimaryKey(departId);
         model.addAttribute("depart_id",department);
-        return "departId";
+        return "Department/departId";
     }
 
     @RequestMapping("/insertDepartment")
@@ -50,7 +50,7 @@ public class DepartmentController {
         if(er>0){
             System.out.print("更新成功");
         }
-        return "depart";
+        return "Department/depart";
     }
 
     @RequestMapping("/deleteById")
@@ -59,7 +59,7 @@ public class DepartmentController {
         if(er>0) {
             System.out.print("删除成功");
         }
-        return "depart";
+        return "Department/depart";
     }
 
 }

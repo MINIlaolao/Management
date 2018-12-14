@@ -32,7 +32,7 @@ public class UserController {
         {
 //            System.out.println(user.getId());
             session.setAttribute("user",user);
-            return "redirect:/toSelectDepart";//改一下ToshowEmployeeList
+            return "redirect:/ToshowEmployeeList";//改一下toSelectDepart
         }
         model.addAttribute("msg","账号或密码错误,请重新输入!");
         return "login";
@@ -40,7 +40,7 @@ public class UserController {
     @RequestMapping("/toSelectDepart")
     public  String toSelectDepart()
     {
-        return "selectDepartment";
+        return "Department/selectDepartment";
     }
 
 
