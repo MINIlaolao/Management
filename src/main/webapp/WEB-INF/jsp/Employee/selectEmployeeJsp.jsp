@@ -6,10 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
-%>
 <html>
 <script type="text/javascript" src="${pageContext.request.contextPath}/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
@@ -30,12 +26,19 @@
     </style>
 </head>
 <body>
-<h5 align="center">查找人员信息</h5>
-<div class="divForm">
+
+<div class="divForm" align="center">
+    <h5>查找人员信息</h5>
     <form action="/dealselectEmployee" method="post">
-        <h5 align="center">人员编号 <input type="text" name="selectEmployeeId"></h5>
-        <H5 align="center"><input type="submit" value="确定查找"></H5>
+        <h5>人员编号 <input type="text" name="selectEmployeeId"></h5>
+            <button type="submit" class="btn btn-default btn-lg">
+                <span class="glyphicon">确定查找</span>
+            </button>
     </form>
+    <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon"></span>
+        <a href="/ToshowEmployeeList" type="bottom">返回员工信息界面</a>
+    </button>
 </div>
 </body>
 </html>

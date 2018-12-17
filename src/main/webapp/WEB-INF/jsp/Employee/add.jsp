@@ -76,8 +76,11 @@
         <br/>
         <input type="submit" class="btn btn-info text-center"/>
         <input type="reset" class="btn btn-info text-center"/>
-        <a href="/ToshowEmployeeList" type="bottom">返回员工信息界面</a>
     </form>
+    <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon"></span>
+        <a href="/ToshowEmployeeList" type="bottom">返回员工信息界面</a>
+    </button>
 </div>
 </body>
 </html>

@@ -42,10 +42,6 @@
         </tr>
         <c:forEach items="${EmployeeList}" var="employee" varStatus="vs">
             <tr>
-
-                <%--<td>--%>
-                    <%--<s:property value="#vs.index+1"/>--%>
-                <%--</td>--%>
                 <td align = "center">${employee.empId}</td>
                 <td align = "center">${employee.empName}</td>
                 <td align = "center">${employee.empAge}</td>
@@ -54,9 +50,6 @@
                 <td align = "center">${employee.empPosition}</td>
                 <td><a href="/deleteEmployee?empId=${employee.empId}">删除</a></td>
                 <td><a href="/updateEmployee?empId=${employee.empId}&empName=${employee.empName}&empAge=${employee.empAge}&empIncome=${employee.empIncome}&empDepart=${employee.empDepart}&empPosition=${employee.empPosition}">更改</a></td>
-                <%--<td align = "center"><html:department pdeptid="${employee.PDeptid}">--%>
-
-                <%--</html:department></td> <!-- 自定义标签 -->--%>
             </tr>
         </c:forEach>
     </table>

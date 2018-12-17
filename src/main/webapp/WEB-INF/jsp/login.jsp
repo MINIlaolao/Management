@@ -1,23 +1,25 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page isELIgnored="false" %>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "://"
-            + request.getServerName() + ":" + request.getServerPort()
-            + path + "/";
-%>
+<%--<%--%>
+    <%--String path = request.getContextPath();--%>
+    <%--String basePath = request.getScheme() + "://"--%>
+            <%--+ request.getServerName() + ":" + request.getServerPort()--%>
+            <%--+ path + "/";--%>
+<%--%>--%>
 <!DOCTYPE HTML>
 <html>
 <head>
     <title>人员管理后台系统</title>
-    <link href="<%=basePath %>css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <%--<link href="<%=basePath %>css/style.css" rel="stylesheet" type="text/css" media="all" />--%>
+    <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- -->
     <script>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('data-t') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
 
-    <script type= "text/javascript" src= "<%=basePath %>js/jquery.min.js"></script >
+    <%--<script type= "text/javascript" src= "<%=basePath %>js/jquery.min.js"></script >--%>
+    <link href="${pageContext.request.contextPath}/js/jquery.min.js" rel="stylesheet" type="text/css"/>
     <script>$(document).ready(function(c) {
         $('.alert-close').on('click', function(c){
             $('.message').fadeOut('slow', function(c){
@@ -27,7 +29,7 @@
     });
     </script>
 </head>
-<body style="background: url(<%=basePath %>images/bg.jpg)">
+<body style="background: url(${pageContext.request.contextPath}/images/bg.jpg)">
 <!-- contact-form -->
 <div class="message warning">
     <div class="inset">

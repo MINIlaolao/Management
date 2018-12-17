@@ -32,26 +32,51 @@
 </head>
 <body>
 <div class="divForm">
-    <table>
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <thead>
         <tr>
-            <td>员工编号</td>
-            <td>员工姓名</td>
-            <td>员工年龄</td>
-            <td>员工收入</td>
-            <td>员工部门</td>
-            <td>员工职务</td>
+            <th><button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-tag"></span> 员工编号
+            </button>
+            </th>
+            <th><button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-user"></span> 员工姓名
+            </button>
+            </th>
+            <th>
+                <button type="button" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-tags"></span> 员工年龄
+                </button></th>
+            <th>
+                <button type="button" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-usd"></span> 员工收入
+                </button></th>
+            <th><button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-bookmark"></span> 员工部门
+            </button></th>
+            <th><button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-lock"></span> 员工职务
+            </button></th>
         </tr>
-            <tr>
-                <td align = "center">${selectEmployeeMsg.empId}</td>
-                <td align = "center">${selectEmployeeMsg.empName}</td>
-                <td align = "center">${selectEmployeeMsg.empAge}</td>
-                <td align = "center">${selectEmployeeMsg.empIncome}</td>
-                <td align = "center">${selectEmployeeMsg.empDepart}</td>
-                <td align = "center">${selectEmployeeMsg.empPosition}</td>
-            </tr>
+        </thead>
+        <tbody align="center">
+        <tr>
+                <td>${selectEmployeeMsg.empId}</td>
+                <td>${selectEmployeeMsg.empName}</td>
+                <td>${selectEmployeeMsg.empAge}</td>
+                <td>${selectEmployeeMsg.empIncome}</td>
+                <td>${selectEmployeeMsg.empDepart}</td>
+                <td>${selectEmployeeMsg.empPosition}</td>
+        </tr>
     </table>
-    <a href="/ToshowEmployeeList" type="bottom">返回员工信息界面</a>
-    <a href="/selectEmployee" type="bottom">继续查询</a>
+    <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon"></span>
+        <a href="/ToshowEmployeeList" type="bottom">返回员工信息界面</a>
+    </button>
+    <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-refresh"></span>
+        <a href="/selectEmployee" type="bottom">继续查询</a>
+    </button>
 </div>
 </body>
 </html>
