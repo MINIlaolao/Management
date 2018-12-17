@@ -9,6 +9,25 @@
     <result column="emp_depart" jdbcType="VARCHAR" property="empDepart" />
     <result column="emp_position" jdbcType="VARCHAR" property="empPosition" />
   </resultMap>
+  <!--分页查询-->
+  <select id="findByPage" parameterType="com.laoqixin.bean.Employee" resultMap="BaseResultMap">
+    SELECT * FROM employee WHERE 1=1
+    <if test="empName != null">
+      AND emp_name LIKE CONCAT('%', #{empName,jdbcType=VARCHAR}, '%')
+    </if>
+    <if test="empAge != null">
+      AND emp_age LIKE CONCAT('%', #{empAge,jdbcType=INTEGER}, '%')
+    </if>
+    <if test="empIncome != null">
+      AND emp_income LIKE CONCAT('%', #{empIncome,jdbcType=DOUBLE}, '%')
+    </if>
+    <if test="empDepart != null">
+      AND emp_depart LIKE CONCAT('%', #{empIncome,jdbcType=VARCHAR}, '%')
+    </if>
+    <if test="empPosition != null">
+      AND emp_position LIKE CONCAT('%', #{empPosition,jdbcType=VARCHAR}, '%')
+    </if>
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from employee
     where emp_id = #{empId,jdbcType=INTEGER}

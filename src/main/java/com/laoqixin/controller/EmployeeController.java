@@ -30,7 +30,7 @@ public class EmployeeController {
     {
         List<Employee> employeeList = employeeService.selectAll();
         model.addAttribute("EmployeeList",employeeList);
-        return "Employee/showEmployeeList";
+        return "contro";//Employee/showEmployeeList;
     }
     @RequestMapping("/showToAdd")
     public String showToAdd()
@@ -83,7 +83,7 @@ public class EmployeeController {
     {
         Employee employee = employeeService.selectByPrimaryKey(selectEmployeeId);
         model.addAttribute("selectEmployeeMsg",employee);
-        return "Department/selectSuccess";
+        return "Employee/selectSuccess";
     }
 
 }
