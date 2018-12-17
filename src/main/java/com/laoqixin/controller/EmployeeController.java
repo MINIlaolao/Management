@@ -64,7 +64,7 @@ public class EmployeeController {
         return "Employee/UpdateEmployee";
     }
 
-    @RequestMapping(value = "/dealupdateEmployee",method = RequestMethod.POST)
+    @RequestMapping(value = "/dealUpdateEmployee",method = RequestMethod.POST)
     public String dealupdateEmployee(Model model,Integer updateByEmployeeId,String updateEmployeeName,Integer updateEmployeeAge,
                                      Double updateEmployeeIncome,String updateEmployeeDepart,String updateEmployeePostion)
     {
