@@ -16,13 +16,11 @@
         <form action="/insertDepartment" method="post">
             <input type="submit" value="添加部门">
         </form>
-
     <table border="2px">
             <tr>
                 <th>部门编号</th>
                 <th>部门名称</th>
             </tr>
-
                 <c:forEach items="${depart}" var="d">
                     <tr>
                         <td>${d.departId}</td>
@@ -32,8 +30,5 @@
                     </tr>
                 </c:forEach>
     </table>
-        <form action="selectDepartment.jsp" method="post">
-            <input type="submit" value="返回查询页面">
-        </form>
 </body>
 </html>

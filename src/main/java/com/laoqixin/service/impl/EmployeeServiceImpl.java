@@ -27,12 +27,14 @@ public class EmployeeServiceImpl implements EmployeeService {
         return  employeeMapper.selectAll();
     }
 
+
     @Override
     public Employee selectByPrimaryKey(Integer empId) {
         return employeeMapper.selectByPrimaryKey(empId);
     }
 
     @Override
+
     public void deleteByPrimaryKey(Integer empId) {
         employeeMapper.deleteByPrimaryKey(empId);
     }

@@ -1,11 +1,17 @@
+import com.laoqixin.bean.Department;
+import com.laoqixin.dao.DepartmentMapper;
 import com.laoqixin.dao.EmployeeMapper;
+import com.laoqixin.service.DepartmentService;
 import com.laoqixin.service.EmployeeService;
 
 import org.apache.ibatis.session.SqlSession;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import java.util.List;
 
 /*
  *  @项目名：  人员管理系统0.1
@@ -21,13 +27,17 @@ public class MapperTest {
 
 
     @Autowired
-    EmployeeMapper employeeMapper;
+    EmployeeMapper   employeeMapper;
     @Autowired
-    EmployeeService employeeService;
-    SqlSession sqlSession;
+    EmployeeService  employeeService;
+    @Autowired
+    DepartmentMapper departmentMapper;
+    @Autowired
+    DepartmentService departmentService;
+    SqlSession       sqlSession;
 
     /**
-     * 测试Mapper
+     * 测试EmployeeMapper
      */
 //    @Test:成功
 //    public void testMapper()
@@ -46,4 +56,16 @@ public class MapperTest {
 //        Employee employee = employeeService.selectByPrimaryKey(1);
 //        System.out.println(employee.getEmpName());
 //    }
+    /**
+     * 测试ControllerMapper
+     */
+    @Test
+    public void testMapper()
+    {
+//        Department       department = new Department();
+        List<Department> list       = departmentService.selectAll();
+        for(Department a : list) {
+            System.out.println(a);
+        }
+    }
   }

@@ -2,11 +2,13 @@ package com.laoqixin.bean;
 
 public class Department {
     public Department(Integer departId, String departName) {
+        super();
         this.departId = departId;
         this.departName = departName;
     }
 
     public Department() {
+        super();
     }
 
     private Integer departId;
