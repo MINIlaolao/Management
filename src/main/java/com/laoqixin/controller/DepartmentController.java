@@ -21,36 +21,45 @@ public class DepartmentController {
         model.addAttribute("depart",ls);
         return "Department/showDepartmentList";
     }
-
     @RequestMapping("/showDepartmentById")
+    public String showDepartmentById(){
+        return "Department/departById";
+    }
+    @RequestMapping("/dealShowDepartmentById")
     public String showDepartmentById(Model model,Integer departId){
         Department department = departmentService.selectByPrimaryKey(departId);
-        model.addAttribute("depart_id",department);
-        return "Department/departId";
+        model.addAttribute("selectDepartmentById",department);
+        return "Department/successShowDepart";
+    }
+
+   @RequestMapping("/dealInsertDepartment")
+    public String insertDepartment(Model model,Integer departId,String departName){
+        Department department = new Department(departId,departName);
+        Integer er = departmentService.insert(department);
+        if(er>0){
+            model.addAttribute("successInsertMsg","添加成功");
+        }else {
+            model.addAttribute("errorInsertMsg","添加失败");
+        }
+        return "redirect:/showDepartment";
     }
 
     @RequestMapping("/insertDepartment")
-    public String insertDepartment(Model model,Integer departId,String departName){
-        Department department = new Department();
-        department.setDepartId(departId);
-        department.setDepartName(departName);
-        Integer er = departmentService.insert(department);
-        if(er>0){
-            System.out.print("添加成功");
-        }
-        return null;
+    public String insertDepartment(){return "Department/insertDepart";}
+    @RequestMapping("/UpdateById")
+    public String updateById(Model model,Integer departId,String departName){
+        model.addAttribute("updateDepartId",departId);
+        model.addAttribute("updateDepartName",departName);
+        return "Department/updateDepartment";
     }
-
-    @RequestMapping("/updateById")
-    public String updateById(Integer departId,String departName){
-        Department department = new Department();
-        department.setDepartId(departId);
-        department.setDepartName(departName);
+    @RequestMapping("/dealUpdateById")
+    public String updateById(Integer departById,String departName){
+        Department department = new Department(departById,departName);
         Integer er = departmentService.updateByPrimaryKey(department);
         if(er>0){
             System.out.print("更新成功");
         }
-        return "Department/showDepartmentList";
+        return "redirect:/showDepartment";
     }
 
     @RequestMapping("/deleteById")
@@ -59,7 +68,7 @@ public class DepartmentController {
         if(er>0) {
             System.out.print("删除成功");
         }
-        return "Department/showDepartmentList";
+        return "redirect:/showDepartment";
     }
 
 }

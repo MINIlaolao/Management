@@ -11,10 +11,11 @@
     <title>departID</title>
 </head>
 <body>
-        部门编号：${depart_id.departId}<br>
-        部门名称：${depart_id.departName}<br>
-    <form action="selectDepartment.jsp" method="post">
+        部门编号：${selectDepartmentById.departId}<br>
+        部门名称：${selectDepartmentById.departName}<br>
+    <form action="/showDepartmentById">
         <input type="submit" value="返回查询页面">
     </form>
+        <form action="/showDepartment"><input type="submit" value="返回部门页面"></form>
 </body>
 </html>

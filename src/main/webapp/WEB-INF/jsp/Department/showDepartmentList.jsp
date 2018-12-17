@@ -16,6 +16,9 @@
         <form action="/insertDepartment" method="post">
             <input type="submit" value="添加部门">
         </form>
+        <form action="/showDepartmentById" method="post">
+            <input type="submit" value="查询">
+        </form>
     <table border="2px">
             <tr>
                 <th>部门编号</th>
@@ -25,10 +28,13 @@
                     <tr>
                         <td>${d.departId}</td>
                         <td>${d.departName}</td>
-                        <td><a href="/updateById?departId=${d.departId}&departName=${d.departName}">更新</a></td>
+                        <td><a href="/UpdateById?departId=${d.departId}&departName=${d.departName}">更新</a></td>
                         <td><a href="/deleteById?departId=${d.departId}">删除</a></td>
                     </tr>
                 </c:forEach>
     </table>
+        <button><a href="/ToshowEmployeeList">返回员工查询主界面</a></button>
+${errorInsertMsg}
+${successInsertMsg}
 </body>
 </html>

@@ -11,10 +11,6 @@
     <title>部门查询页面</title>
 </head>
 <body>
-    <form action="/showDepartmentById" method="post">
-            部 门 ID:<input type="text" name="departId">
-                <input type="submit" value="查询">
-    </form>
 <br>
 <br>
 <br>

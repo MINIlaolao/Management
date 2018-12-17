@@ -11,7 +11,7 @@
     <title>添加部门</title>
 </head>
 <body>
-    <form action="/insertDepartment" method="post">
+    <form action="/dealInsertDepartment" method="post">
         部门编号:<input type="text" name="departId">
         部门名称:<input type="text" name="departName">
         <br><br>
