@@ -5,9 +5,9 @@
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
 %>
 <html>
-<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="<%=basePath %>/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="<%=basePath %>/bootstrap/bootstrap.min.js">
+<link rel="stylesheet" href="<%=basePath %>/js/jquery.min.js">
 <body>
 <%--<form action="/dealupdateEmployee" method="post">--%>
     <%--<h5 align="center">员工编号 ${updateEmployeeId}</h5>--%>

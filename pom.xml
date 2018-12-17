@@ -40,7 +40,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aspects</artifactId>
-      <version>4.3.7.RELEASE</version>
+      <version>4.1.6.RELEASE</version>
     </dependency>
     <!-- Mybatis包 -->
     <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->

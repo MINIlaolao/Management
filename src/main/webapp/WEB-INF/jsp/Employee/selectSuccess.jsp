@@ -6,7 +6,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
+%>
 <html>
+<link rel="stylesheet" href="<%=basePath %>/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="<%=basePath %>/bootstrap/bootstrap.min.js">
+<link rel="stylesheet" href="<%=basePath %>/js/jquery.min.js">
 <head>
     <title>查询员工信息成功</title>
     <style type="text/css">
