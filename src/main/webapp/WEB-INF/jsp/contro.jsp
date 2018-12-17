@@ -7,10 +7,9 @@ To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
-%>
+<script type="text/javascript" src="${pageContext.request.contextPath}/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+<link href="${pageContext.request.contextPath}/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <html>
 <head>
     <meta charset="utf-8">
@@ -44,9 +43,6 @@ To change this template use File | Settings | File Templates.
 
         }
     </style>
-    <link rel="stylesheet" href="<%=basePath %>/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="<%=basePath %>/bootstrap/bootstrap.min.js">
-    <link rel="stylesheet" href="<%=basePath %>/js/jquery.min.js">
 </head>
 <body>
     <div id="all">
@@ -113,6 +109,10 @@ To change this template use File | Settings | File Templates.
             <a href="/showToAdd"><button type="button" class="btn btn-default btn-lg">
             <span class="glyphicon glyphicon-plus"></span> 添加员工
             </button></a>
+             <a href="/selectEmployee"><button type="button" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-plus"></span> 查询员工
+            </button></a>
+
         </div>
     </div>
 </body>

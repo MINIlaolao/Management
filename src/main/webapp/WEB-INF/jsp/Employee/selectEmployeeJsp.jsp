@@ -11,9 +11,9 @@
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
 %>
 <html>
-<link rel="stylesheet" href="<%=basePath %>/bootstrap/bootstrap.min.css">
-<link rel="stylesheet" href="<%=basePath %>/bootstrap/bootstrap.min.js">
-<link rel="stylesheet" href="<%=basePath %>/js/jquery.min.js">
+<script type="text/javascript" src="${pageContext.request.contextPath}/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+<link href="${pageContext.request.contextPath}/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <head>
     <title>查找人员</title>
     <style type="text/css">
