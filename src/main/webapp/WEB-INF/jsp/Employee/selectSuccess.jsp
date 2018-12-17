@@ -74,7 +74,7 @@
         <a href="/ToshowEmployeeList" type="bottom">返回员工信息界面</a>
     </button>
     <button type="button" class="btn btn-default btn-info text-center">
-        <span class="glyphicon glyphicon-refresh"></span>
+        <span class="glyphicon glyphicon-zoom-in"></span>
         <a href="/selectEmployee" type="bottom">继续查询</a>
     </button>
 </div>

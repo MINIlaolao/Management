@@ -115,7 +115,7 @@ To change this template use File | Settings | File Templates.
             <span class="glyphicon glyphicon-plus"></span> 添加员工
             </button></a>
              <a href="/selectEmployee"><button type="button" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-plus"></span> 查询员工
+            <span class="glyphicon glyphicon-zoom-in"></span> 查询员工
             </button></a>
         </div>
     </div>
