@@ -69,10 +69,9 @@
         <br/>
         <input type="submit" class="btn btn-info text-center" value="确定修改"/>
         <input type="reset" class="btn btn-info text-center"/>
-
     </form>
-    <button type="button" class="btn btn-default btn-lg">
-        <span class="glyphicon"></span>
+    <button type="button" class="btn btn-default btn-info text-center">
+        <span class="glyphicon glyphicon-chevron-left"></span>
         <a href="/ToshowEmployeeList" type="bottom">返回员工信息界面</a>
     </button>
 </div>

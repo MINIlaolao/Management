@@ -69,11 +69,11 @@
                 <td>${selectEmployeeMsg.empPosition}</td>
         </tr>
     </table>
-    <button type="button" class="btn btn-default btn-lg">
-        <span class="glyphicon"></span>
+    <button type="button" class="btn btn-default btn-info text-center">
+        <span class="glyphicon glyphicon-chevron-left"></span>
         <a href="/ToshowEmployeeList" type="bottom">返回员工信息界面</a>
     </button>
-    <button type="button" class="btn btn-default btn-lg">
+    <button type="button" class="btn btn-default btn-info text-center">
         <span class="glyphicon glyphicon-refresh"></span>
         <a href="/selectEmployee" type="bottom">继续查询</a>
     </button>

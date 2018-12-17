@@ -46,9 +46,14 @@ To change this template use File | Settings | File Templates.
 </head>
 <body>
     <div id="all">
-        <div id="header">人员部门管理</div>
-        <div id="menu">
+        <div id="header" align="center">人员部门管理</div>
 
+        <div id="menu">
+            <a href="/showDepartment">
+                <button type="button" class="btn btn-default btn-lg" >
+                <span class="glyphicon"></span> 部门管理
+            </button>
+            </a>
         </div>
         <div id="bodier">
 
@@ -112,7 +117,6 @@ To change this template use File | Settings | File Templates.
              <a href="/selectEmployee"><button type="button" class="btn btn-default btn-lg">
             <span class="glyphicon glyphicon-plus"></span> 查询员工
             </button></a>
-
         </div>
     </div>
 </body>
