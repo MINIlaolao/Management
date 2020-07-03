@@ -124,8 +124,10 @@ mybatis ,maven导包等在图片里有注释
 
 运行结果为下图的展开包:
 
-(media/1f18d74a8fd5f6cd523d634286894b6e.jpg)
+![C:\\Users\\ADMINI\~1\\AppData\\Local\\Temp\\WeChat Files\\c8ef1cc5f5d1408fb287cc4a7f5e77f.jpg](media/1f18d74a8fd5f6cd523d634286894b6e.jpg)
 
+C:\\Users\\ADMINI\~1\\AppData\\Local\\Temp\\WeChat
+Files\\c8ef1cc5f5d1408fb287cc4a7f5e77f.jpg
 
 测试mapper是否可用:
 
@@ -199,21 +201,21 @@ mybatis ,maven导包等在图片里有注释
 
 运行与测试：service:
 
-(media/6bd7f5053dae92dc75d757c8e06376a3.png)
+![C:\\Users\\sziit\\Desktop\\捕获.PNG](media/6bd7f5053dae92dc75d757c8e06376a3.png)
 
 C:\\Users\\sziit\\Desktop\\捕获.PNG
 
 Controller:
 
-(media/9c5c3f80ac8d776ac358cb1f784796c0.png)
+![C:\\Users\\sziit\\Desktop\\捕获.PNG](media/9c5c3f80ac8d776ac358cb1f784796c0.png)
 
 C:\\Users\\sziit\\Desktop\\捕获.PNG
 
-(media/3fd013208b8b4e13bb46b8527698e66e.png)
+![C:\\Users\\sziit\\Desktop\\捕获.PNG](media/3fd013208b8b4e13bb46b8527698e66e.png)
 
 C:\\Users\\sziit\\Desktop\\捕获.PNG
 
-(media/f7a03af39a67c6f324a53a103561a427.png)
+![C:\\Users\\sziit\\Desktop\\捕获.PNG](media/f7a03af39a67c6f324a53a103561a427.png)
 
 C:\\Users\\sziit\\Desktop\\捕获.PNG
 
@@ -231,10 +233,13 @@ C:\\Users\\sziit\\Desktop\\捕获.PNG
 
 运行与测试：
 
-(media/36477bed35ae0e3a3e26e67b587d5bd0.png)
+![C:\\Users\\sziit\\Desktop\\捕获.PNG](media/36477bed35ae0e3a3e26e67b587d5bd0.png)
 
+C:\\Users\\sziit\\Desktop\\捕获.PNG
 
+![](media/26c254faeb8e512d1c013f9f8d4b2c1e.png)
 
+![](media/f57dad5532c1e095e2dc1b18af8f9368.png)
 
 ## 5.7树搭建模块实现
 
