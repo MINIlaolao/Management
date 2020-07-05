@@ -17,6 +17,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="renyuanguanlixitong0.2" />
+        <module name="0.2" />
       </profile>
     </annotationProcessing>
   </component>
