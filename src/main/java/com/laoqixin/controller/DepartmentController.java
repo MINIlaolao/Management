@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
+/**
+ * @author Laoqixin
+ */
 @Controller
 public class DepartmentController {
     @Autowired

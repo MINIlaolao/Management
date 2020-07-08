@@ -1,5 +1,8 @@
 package com.laoqixin.bean;
 
+/**
+ * @author Laoqixin
+ */
 public class User {
     private Integer id;
 

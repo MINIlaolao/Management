@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpSession;
 
-/*
+/**
  *  @项目名：  renyuanguanlixitong0.2
  *  @包名：    com.laoqixin.controller
  *  @文件名:   UserController
- *  @创建者:   laoqixin
+ *  @author :   laoqixin
  *  @创建时间:  2018/12/12 23:25
  *  @描述：    TODO
  */
@@ -30,9 +30,10 @@ public class UserController {
 
         if(user != null)
         {
-//            System.out.println(user.getId());
             session.setAttribute("user",user);
-            return "redirect:/ToshowEmployeeList";//改一下toSelectDepart
+            //改一下toSelectDepart
+            return "redirect:/ToshowEmployeeList";
+
         }
         model.addAttribute("msg","账号或密码错误,请重新输入!");
         return "login";

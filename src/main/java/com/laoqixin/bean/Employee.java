@@ -1,5 +1,8 @@
 package com.laoqixin.bean;
 
+/**
+ * @author Laoqixin
+ */
 public class Employee {
     public Employee(Integer empId,
                     String empName,

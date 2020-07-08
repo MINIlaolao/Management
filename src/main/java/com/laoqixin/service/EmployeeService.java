@@ -13,6 +13,9 @@ import java.util.List;
  *  @描述：    编写增删改查的业务层 实现dao中的接口方法
  */
 
+/**
+ * @author Laoqixin
+ */
 public interface EmployeeService {
     /**
      * 查询所有员工（分页查询）

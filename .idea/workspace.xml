@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bd8b85f-a23d-4596-9f9d-5f574968ddf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/PageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/PositionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/PositionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -43,6 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1593879980240</updated>
       <workItem from="1593879984794" duration="365000" />
+      <workItem from="1593964214133" duration="755000" />
+      <workItem from="1594117285031" duration="5436000" />
     </task>
     <servers />
   </component>
@@ -50,6 +72,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="906" y="378" key="#Inspections" timestamp="1594137028158">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="906" y="378" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1594137028158" />
     <state x="1165" y="563" key="#Notifications" timestamp="1593880087216">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

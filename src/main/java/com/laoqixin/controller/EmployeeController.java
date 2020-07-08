@@ -11,18 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-/*
- *  @项目名：  renyuanguanlixitong0.2
- *  @包名：    com.laoqixin.controller
- *  @文件名:   EmployeeController
- *  @创建者:   laoqixin
- *  @创建时间:  2018/12/13 9:33
- *  @描述：    TODO
+/**
+ * @author Laoqixin
  */
 @Controller
 public class EmployeeController {
-//    @Autowired
-//    EmployeeMapper employeeMapper;
     @Autowired
     EmployeeService employeeService;
     @RequestMapping("/ToshowEmployeeList")
@@ -30,7 +23,8 @@ public class EmployeeController {
     {
         List<Employee> employeeList = employeeService.selectAll();
         model.addAttribute("EmployeeList",employeeList);
-        return "contro";//Employee/showEmployeeList;
+        //Employee/showEmployeeList;
+        return "contro";
     }
     @RequestMapping("/showToAdd")
     public String showToAdd()

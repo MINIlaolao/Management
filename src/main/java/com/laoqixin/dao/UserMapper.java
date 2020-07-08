@@ -3,7 +3,9 @@ package com.laoqixin.dao;
 import com.laoqixin.bean.User;
 
 import org.apache.ibatis.annotations.Param;
-
+/**
+ * @author Laoqixin
+ */
 public interface UserMapper {
     /**
      * 实现登录业务

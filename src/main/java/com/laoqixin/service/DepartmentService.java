@@ -4,6 +4,9 @@ import com.laoqixin.bean.Department;
 
 import java.util.List;
 
+/**
+ * @author Laoqixin
+ */
 public interface DepartmentService {
     /**
      * 部门删除
@@ -12,6 +15,11 @@ public interface DepartmentService {
      */
     int deleteByPrimaryKey(Integer departId);
 
+    /**
+     *
+     * @param record
+     * @return
+     */
     int insert(Department record);
 
     Department selectByPrimaryKey(Integer departId);
