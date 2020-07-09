@@ -22,9 +22,23 @@ public interface DepartmentService {
      */
     int insert(Department record);
 
+    /**
+     *
+     * @param departId
+     * @return
+     */
     Department selectByPrimaryKey(Integer departId);
 
+    /**
+     *
+     * @return
+     */
     List<Department> selectAll();
 
+    /**
+     *
+     * @param record
+     * @return
+     */
     int updateByPrimaryKey(Department record);
 }

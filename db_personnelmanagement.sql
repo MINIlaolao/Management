@@ -13,6 +13,9 @@ File Encoding         : 65001
 Date: 2018-12-13 10:35:41
 */
 
+/*create database 'db_personnelmanagement';
+use db_personnelmanagement;*/
+
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------

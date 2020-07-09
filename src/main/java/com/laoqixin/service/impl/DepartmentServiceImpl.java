@@ -4,7 +4,6 @@ import com.laoqixin.bean.Department;
 import com.laoqixin.dao.DepartmentMapper;
 import com.laoqixin.service.DepartmentService;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,8 +16,9 @@ import java.util.List;
 @Transactional(rollbackFor = Exception.class)
 public class DepartmentServiceImpl implements DepartmentService {
 
-    @Autowired
-    private  DepartmentMapper departmentMapper;
+    private final DepartmentMapper departmentMapper;
+
+    public DepartmentServiceImpl(DepartmentMapper departmentMapper) {this.departmentMapper = departmentMapper;}
 
     @Override
     public int deleteByPrimaryKey(Integer departId){return departmentMapper.deleteByPrimaryKey(departId);}

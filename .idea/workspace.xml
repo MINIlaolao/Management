@@ -3,28 +3,23 @@
   <component name="AnalysisUIOptions">
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="0.2:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9bd8b85f-a23d-4596-9f9d-5f574968ddf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/798b2768-c4ff-42ce-9553-84396bd88130.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/798b2768-c4ff-42ce-9553-84396bd88130.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/PageBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/DepartmentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/EmployeeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/PositionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/PositionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_personnelmanagement.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_personnelmanagement.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laoqixin/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +28,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="true" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1eEHlE44VZoTmzB2YrukZyzfHBF" />
   <component name="ProjectViewState">
@@ -51,6 +59,243 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+  </component>
+  <component name="RunManager" selected="Tomcat Server.index.jsp (2)">
+    <configuration name="db_personnelmanagement.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/db_personnelmanagement.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="798b2768-c4ff-42ce-9553-84396bd88130" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 8.5.34" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="LOCAL" value="false" />
+      <option name="BROWSER_ID" value="3dc7ff79-6c50-4458-b85c-603e00a74bbc" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <option name="transportStagingTarget">
+                  <TransportTarget>
+                    <option name="id" value="b2ca3004-58c7-4cf4-adf0-b112a74f0e9d" />
+                    <id>b2ca3004-58c7-4cf4-adf0-b112a74f0e9d</id>
+                  </TransportTarget>
+                </option>
+                <option name="watchedLocalPath" value="" />
+                <watched-path />
+                <name>CONTEXT_XML</name>
+                <transport-target>
+                  <TransportTarget>
+                    <option name="id" value="b2ca3004-58c7-4cf4-adf0-b112a74f0e9d" />
+                    <id>b2ca3004-58c7-4cf4-adf0-b112a74f0e9d</id>
+                  </TransportTarget>
+                </transport-target>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <option name="stagingRemotePath" value="" />
+                <option name="transportStagingTarget">
+                  <TransportTarget>
+                    <option name="id" value="bc14780b-243a-4a96-ab47-123cc88c442e" />
+                    <id>bc14780b-243a-4a96-ab47-123cc88c442e</id>
+                  </TransportTarget>
+                </option>
+                <staging-path />
+                <name>STAGING</name>
+                <transport-target>
+                  <TransportTarget>
+                    <option name="id" value="bc14780b-243a-4a96-ab47-123cc88c442e" />
+                    <id>bc14780b-243a-4a96-ab47-123cc88c442e</id>
+                  </TransportTarget>
+                </transport-target>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2608" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="index.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+      <deployment>
+        <artifact name="0.2:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/0_2_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="index_jsp_(1)_0_2_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="0.2:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="index.jsp (2)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+      <deployment>
+        <artifact name="0.2:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/0_2_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="index_jsp_(2)_0_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="0.2:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="0.2:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/0_2_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="index_jsp_0_2_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2780" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="0.2:war" />
+          <artifact name="0.2:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Database Script.db_personnelmanagement.sql" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.34" />
+      <item itemvalue="Tomcat Server.index.jsp" />
+      <item itemvalue="Tomcat Server.index.jsp (1)" />
+      <item itemvalue="Tomcat Server.index.jsp (2)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Tomcat Server.index.jsp (2)" />
+        <item itemvalue="Tomcat Server.index.jsp (1)" />
+        <item itemvalue="Database Script.db_personnelmanagement.sql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -65,6 +310,7 @@
       <workItem from="1593879984794" duration="365000" />
       <workItem from="1593964214133" duration="755000" />
       <workItem from="1594117285031" duration="5436000" />
+      <workItem from="1594212420421" duration="6006000" />
     </task>
     <servers />
   </component>
@@ -72,6 +318,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1059" y="505" key="#BuildArtifactsBeforeRunChooser" timestamp="1594222551628">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1059" y="505" key="#BuildArtifactsBeforeRunChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1594222551628" />
     <state x="906" y="378" key="#Inspections" timestamp="1594137028158">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -80,5 +330,125 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1165" y="563" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1593880087216" />
+    <state x="760" y="274" key="#Project_Structure" timestamp="1594212487149">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1594212487149" />
+    <state x="690" y="538" key="#SQL_Dialects" timestamp="1594218844847">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="690" y="538" key="#SQL_Dialects/0.0.2560.1400@0.0.2560.1400" timestamp="1594218844847" />
+    <state x="601" y="672" key="#SQL_Resolution_Scopes" timestamp="1594220789874">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="601" y="672" key="#SQL_Resolution_Scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1594220789874" />
+    <state x="915" y="713" key="#Tomcat_Server" timestamp="1594222539228">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="915" y="713" key="#Tomcat_Server/0.0.2560.1400@0.0.2560.1400" timestamp="1594222539228" />
+    <state x="594" y="471" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594222683552">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="594" y="471" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594222683552" />
+    <state x="865" y="455" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1594222539925">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="865" y="455" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.2560.1400@0.0.2560.1400" timestamp="1594222539925" />
+    <state x="959" y="507" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594221828301">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="959" y="507" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594221828301" />
+    <state x="842" y="465" key="#db_personnelmanagement.sql" timestamp="1594220539972">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="842" y="465" key="#db_personnelmanagement.sql/0.0.2560.1400@0.0.2560.1400" timestamp="1594220539972" />
+    <state x="968" y="268" key="#index.jsp" timestamp="1594222554751">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="968" y="268" key="#index.jsp/0.0.2560.1400@0.0.2560.1400" timestamp="1594222554751" />
+    <state x="920" y="571" key="FileChooserDialogImpl" timestamp="1594222032038">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="920" y="571" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1594222032038" />
+    <state width="1518" height="548" key="GridCell.Tab.0.bottom" timestamp="1594222972607">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972607" />
+    <state width="1518" height="548" key="GridCell.Tab.0.center" timestamp="1594222972606">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972606" />
+    <state width="1518" height="548" key="GridCell.Tab.0.left" timestamp="1594222972606">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972606" />
+    <state width="1518" height="548" key="GridCell.Tab.0.right" timestamp="1594222972606">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972606" />
+    <state width="1518" height="548" key="GridCell.Tab.1.bottom" timestamp="1594222972553">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972553" />
+    <state width="1518" height="548" key="GridCell.Tab.1.center" timestamp="1594222972553">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972553" />
+    <state width="1518" height="548" key="GridCell.Tab.1.left" timestamp="1594222972553">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972553" />
+    <state width="1518" height="548" key="GridCell.Tab.1.right" timestamp="1594222972553">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972553" />
+    <state width="1518" height="548" key="GridCell.Tab.2.bottom" timestamp="1594222972554">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972554" />
+    <state width="1518" height="548" key="GridCell.Tab.2.center" timestamp="1594222972553">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972553" />
+    <state width="1518" height="548" key="GridCell.Tab.2.left" timestamp="1594222972553">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972553" />
+    <state width="1518" height="548" key="GridCell.Tab.2.right" timestamp="1594222972553">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594222972553" />
+    <state width="1518" height="548" key="GridCell.Tab.3.bottom" timestamp="1594222211991">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594222211991" />
+    <state width="1518" height="548" key="GridCell.Tab.3.center" timestamp="1594222211991">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594222211991" />
+    <state width="1518" height="548" key="GridCell.Tab.3.left" timestamp="1594222211991">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594222211991" />
+    <state width="1518" height="548" key="GridCell.Tab.3.right" timestamp="1594222211991">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1518" height="548" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594222211991" />
+    <state x="641" y="461" key="SettingsEditor" timestamp="1594221185067">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="641" y="461" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1594221185067" />
+    <state width="200" height="441" key="SqlResolveConfigurable" timestamp="1594220783272">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="200" height="441" key="SqlResolveConfigurable/0.0.2560.1400@0.0.2560.1400" timestamp="1594220783272" />
+    <state width="500" height="350" key="documentation.popup.size" timestamp="1594212830507">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="500" height="350" key="documentation.popup.size/0.0.2560.1400@0.0.2560.1400" timestamp="1594212830507" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1594212547089">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1594212547089" />
   </component>
 </project>
